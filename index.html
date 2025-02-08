@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header> 
+        <h1>Password Generator</h1>
+    </header>
+
+    <main>
+        <input type="text" id="password" readonly>
+
+        <div>
+            <input type="checkbox" id="includeNumbers">
+            <label for="includeNumbers">Include numbers?</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="includeUppercase">
+            <label for="includeUppercase">Include upper case?</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="includeSpecial">
+            <label for="includeSpecial">Include special characters?</label>
+        </div>
+
+        <button id="passwordButton">Generate Password</button>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
